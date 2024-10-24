@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import BoutonAjouter from './composants/BoutonAjouter/BoutonAjouter';
+import Searchbar from './composants/SearchBar/Searchbar';
+import Table from './composants/Table/Table';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container mx-auto' >
+      <div className="   flex items-center justify-between mt-9 w-100">
+      <div>
+      <Searchbar/>
+      </div>
+      <div>
+      <BoutonAjouter/>
+      </div>
+      </div>
+
+      
+      <div className='mt-9 '>
+        <Table/>
+      </div>
     </div>
   );
 }
